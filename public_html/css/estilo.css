@@ -1,0 +1,29 @@
+.logo{
+    width: 100px;
+    height: 100px;
+        margin-right: 1050px;
+
+}
+
+#registrar{
+    margin-right: 5px;
+}
+
+.jumbotron{
+    background-color: transparent !important;
+    margin-left: 90px;
+}
+
+.navbar{
+    background-color: #3366ff !important;
+}
+
+.btn{
+    background-color: #ffff71 !important;
+    color: #000c00 !important;
+}
+
+.card{
+    color:#999999 !important
+} 
+
