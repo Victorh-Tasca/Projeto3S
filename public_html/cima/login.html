@@ -21,13 +21,15 @@ and open the template in the editor.
                 <img src="../img/logo.png" alt="Logotipo" class="logo"/>
             </a>
             <form class="form-inline">
-                <a href="../cima/registrar.html" class="btn btn-primary" role="button" id="registrar" style="margin-left: 1143px;">Registrar</a>
+                <a href="../cima/registrar_final.html" class="btn btn-primary" role="button" id="registrar" style="margin-left: 1143px;">Registrar</a>
             </form>
         </nav>
         <div class="jumbotron">            
-            <div class="container">
-                <div class="row">
+            <div class="container" style="margin-left: -10px">
+                <div class="row justify-content-md-center">
                     <div class="col-md-4">
+                        <h5 style="text-align: center;" class="heading text__web-h5 grid-panel-web__title" data-testid="panel-title">Login</h5>
+
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email:</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira seu email">
@@ -40,10 +42,15 @@ and open the template in the editor.
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1" >Mantenha-me conectado</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Logar</button>
-                        <div><a href="../meio/esqueci_senha.html" data-testid="cant-sign-in">Esqueci minha senha</a>
-                            <p><a href="../cima/registrar.html" target="_blank" data-testid="signup-external-link">Registrar</a></p></div>
+                        <div clas="container" style="text-align: center;">
+                            <button type="submit" class="btn" style="background-color: transparent !important" >
+                                <img style="width: 100px;" src="../img/login.png" alt="Login"/>
+                            </button>
+                            <div><a href="../meio/esqueci_senha.html" data-testid="cant-sign-in">Esqueci minha senha</a>
+                                <p><a href="../cima/registrar_final.html">Registrar</a></p></div>
+                        </div>
                     </div>
+                </div>
                 </div>
             </div>  
     </body>
