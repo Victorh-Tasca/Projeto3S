@@ -32,3 +32,17 @@
 a{
     color: #999999;
 }
+
+body{
+    background-color: #d4eeff
+}
+
+.card{
+    background-color: activeborder !important
+}
+
+.txt_inicial{
+    font-family: Trebuchet MS, sans-serif;
+    text-align: justify;
+    font-size: small;
+}
