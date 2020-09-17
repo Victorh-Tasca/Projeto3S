@@ -14,6 +14,7 @@
 
 .navbar{
     background-color: #3366ff !important;
+    margin-bottom: 20px;
 }
 
 .btn{
@@ -41,24 +42,51 @@ body{
     background-color: activeborder !important
 }
 
-.txt_inicial{
+
+#img_intro{
+    width: 600px;
+
+}
+#meio{
+    margin-left: 50px;
+    position: absolute;
+    right: 60px;
+
+}
+
+.texto_vertical{
+    margin-left:auto;
+    margin-top: 30px;
+    max-width:300px;
+    position: absolute;
+    left: 10px;
+    background-color: #3366ff;
     font-family: Trebuchet MS, sans-serif;
     text-align: justify;
     font-size: 11pt;
-}
-#img_intro{
-    width: 460px;
-    padding-top: 20px;
+    margin-bottom: 30px;
 }
 
-.cor_inicio{
-    margin-top: 20px;
-    background-color: #3366ff !important;
-    height: 420px;
-    padding-top: 20px;
-    text-align: center;
+#logo_login{
+    position: absolute;
+    right: 100px;
+    width: 600px;
+    margin-top: -100px;
 }
 
-#meio{
-    margin-left: 100px;
+#corpo_login{
+    position: absolute;
+    left: 200px;
+}
+
+.logo_reg{
+    position: absolute;
+    left: 100px;
+    width: 600px;
+    margin-top: -100px;
+}
+
+.corpo_reg{
+    position: absolute;
+    right: 200px;
 }
