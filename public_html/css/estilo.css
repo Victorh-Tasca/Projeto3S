@@ -44,5 +44,21 @@ body{
 .txt_inicial{
     font-family: Trebuchet MS, sans-serif;
     text-align: justify;
-    font-size: small;
+    font-size: 11pt;
+}
+#img_intro{
+    width: 460px;
+    padding-top: 20px;
+}
+
+.cor_inicio{
+    margin-top: 20px;
+    background-color: #3366ff !important;
+    height: 420px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#meio{
+    margin-left: 100px;
 }
