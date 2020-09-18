@@ -22,10 +22,6 @@
     color: #000c00 !important;
 }
 
-.card{
-    color:#999999 !important
-} 
-
 .nav-link{
     color: #000c00 !important;
 }
@@ -39,7 +35,10 @@ body{
 }
 
 .card{
-    background-color: activeborder !important
+    color:#999999 !important
+    background-color: activeborder !important;
+    margin-bottom: 30px;
+    margin-left: 20px;
 }
 
 
@@ -47,7 +46,7 @@ body{
     width: 600px;
 
 }
-#meio{
+.meio{
     margin-left: 50px;
     position: absolute;
     right: 60px;
@@ -90,3 +89,4 @@ body{
     position: absolute;
     right: 200px;
 }
+

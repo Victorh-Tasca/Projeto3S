@@ -14,6 +14,7 @@ and open the template in the editor.
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <link href="../css/estilo.css" rel="stylesheet" type="text/css"/>
+        <script src="../js/js.js" type="text/javascript"></script>
     </head>
     <body>
         <!--Cabeçalho-->
@@ -23,12 +24,8 @@ and open the template in the editor.
             </a>
             <form class="form-inline">
                 <a href="../cima/login.html" class="btn btn-primary" role="button" style="margin-left: 1143.3px;">Login</a>
-
-
-
             </form>
         </nav>
-
         <!--Meio-->
         <div class="jumbotron">            
             <div class="container" style="margin-left: -10px">
@@ -37,35 +34,22 @@ and open the template in the editor.
                         <h5 style="text-align: center;" class="heading text__web-h5 grid-panel-web__title" data-testid="panel-title">Registre-se</h5>
 
                         <div class="form-group">
-                            <label for="InputNome">Nome:</label>
-                            <input type="text" class="form-control" id="InputNome" placeholder="Insira seu nome">
+                            <form>
+                                <input type="radio" id="user_reg" name="reg" value="user_reg" onClick="habilitacao1() || habilitacao2() || habilitacao3()">
+                                <label for="user_reg">Usuário:</label><br>
+                                <input type="text" class="form-control" id="user_input" placeholder="Insira seu CPF" disabled>    
+                                <input type="radio" id="prest_reg" name="reg" value="prest_reg" onClick="habilitacao2() || habilitacao1() || habilitacao3()"> 
+                                <label for="prest_reg">Prestador:</label><br>
+                                <input type="text" class="form-control" id="prest_input" placeholder="Insira seu CPF" disabled>    
+                                <input type="radio" id="admin_reg" name="reg" value="admin_reg" onClick="habilitacao3() || habilitacao1() || habilitacao2()">
+                                <label for="admin_reg">Administrador:</label>
+                                <input type="text" class="form-control" id="admin_input" placeholder="Insira seu CPF" disabled>    
+
+                            </form>
                         </div>
-                        <div class="form-group">
-                            <label for="InputTel">Telefone:</label>
-                            <input type="tel" class="form-control" id="InputTel" placeholder="Insira seu telefone" />
-                        </div>
-                        <div class="form-group">
-                            <label for="InputCPF">CPF:</label>
-                            <input type="text" class="form-control" id="InputCPF" placeholder="Insira seu CPF">    
-                        </div>
-                        <div class="form-group">
-                            Gênero:
-                            <select class="custom-select">
-                                <option selected>Escolha...</option>
-                                <option value="1">Masculino</option>
-                                <option value="2">Feminino</option>
-                                <option value="2">Outro</option>
-                                <option value="3">Prefiro não dizer</option>
-                            </select>
-                        </div>
-                        <div clas="container" style="text-align: center;">
-                            <a href="registrar_2.html">
-                                <button type="submit" class="btn btn-primary" id="continuar">Continuar</button>
-                            </a>
-                        </div>
+
                     </div>
                     <img src="../img/logo.png" alt="Logo" class="logo_reg"/>
-
                 </div>
             </div>
         </div>  
