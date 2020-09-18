@@ -30,24 +30,23 @@ and open the template in the editor.
         <div class="jumbotron">            
             <div class="container" style="margin-left: -10px">
                 <div class="row justify-content-md-center">
-                    <div class="col-md-4 corpo_reg">
+                    <div class="col-md-4 corpo_reg" id="reg3">
                         <h5 style="text-align: center;" class="heading text__web-h5 grid-panel-web__title" data-testid="panel-title">Registre-se</h5>
-
                         <div class="form-group">
                             <form>
-                                <input type="radio" id="user_reg" name="reg" value="user_reg" onClick="habilitacao1() || habilitacao2() || habilitacao3()">
-                                <label for="user_reg">Usuário:</label><br>
-                                <input type="text" class="form-control" id="user_input" placeholder="Insira seu CPF" disabled>    
-                                <input type="radio" id="prest_reg" name="reg" value="prest_reg" onClick="habilitacao2() || habilitacao1() || habilitacao3()"> 
+                                <input type="radio" id="user_reg" name="reg" value="user_reg" onClick="habilitacao2()">
+                                <label for="user_reg">Usuário</label><br>
+                                <input type="radio" id="prest_reg" name="reg" value="prest_reg" onClick="habilitacao2()">
                                 <label for="prest_reg">Prestador:</label><br>
-                                <input type="text" class="form-control" id="prest_input" placeholder="Insira seu CPF" disabled>    
-                                <input type="radio" id="admin_reg" name="reg" value="admin_reg" onClick="habilitacao3() || habilitacao1() || habilitacao2()">
-                                <label for="admin_reg">Administrador:</label>
-                                <input type="text" class="form-control" id="admin_input" placeholder="Insira seu CPF" disabled>    
-
+                                <input type="text" class="form-control" id="prest_input" placeholder="Insira seu NIT" disabled>    
                             </form>
                         </div>
-
+                        <div style="text-align: center;">
+                            <input type='button' value='Voltar' class="btn btn-primary" onclick='history.go(-1)' />
+                            <a href="registrar_final.html">
+                                <button type="submit" class="btn btn-primary" id="continuar">Continuar</button>
+                            </a>
+                        </div>
                     </div>
                     <img src="../img/logo.png" alt="Logo" class="logo_reg"/>
                 </div>

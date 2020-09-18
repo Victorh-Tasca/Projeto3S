@@ -14,6 +14,7 @@ and open the template in the editor.
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <link href="../css/estilo.css" rel="stylesheet" type="text/css"/>
+        <script src="../js/js.js" type="text/javascript"></script>
     </head>
     <body>
         <!--Cabeçalho-->
@@ -32,18 +33,21 @@ and open the template in the editor.
                 <div class="form-row justify-content-md-center">
                     <div class="col-md-4 corpo_ES">
                         <h5 style="text-align: center;" class="heading text__web-h5 grid-panel-web__title" data-testid="panel-title">Esqueceu sua senha?</h5><br>
-                        <h6>Informe seu email para receber o link para alterar sua senha:</h6>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email:</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira seu email">
+                            <label for="NewPassword">Nova senha:</label>
+                            <input type="password" class="form-control" id="NewPassword" placeholder="Insira sua nova senha" onchange='check_newpass();' required>
                         </div>
-                        <div clas="container" style="text-align: center;">
-                            <a href="esqueci_senha2.html">
-                                <button type="submit" class="btn btn-primary" id="Enviar">Enviar</button>
+                        <div class="form-group">
+                            <label for="ConfirmNewPassword">Confirme sua nova senha:</label>
+                            <input type="password" class="form-control" id="ConfirmNewPassword" placeholder="Confirme sua nova senha" onchange='check_newpass();' required>
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="../cima/login.html">
+                                <button type="submit" class="btn btn-primary" id="enviar" disabled="" onclick="NewPassAlert()">Enviar</button>
                             </a>
                         </div>
                     </div>
-                    <img src="../img/esqueci_senha1.png" alt="Imagem de um trabalhador" class="img_ES"/>
+                    <img src="../img/esqueci_senha2.png" alt="Imagem de um trabalhador" class="img_ES" style="top: 30%; left: 10%; width: 550px;"/>
 
                 </div>
             </div>
