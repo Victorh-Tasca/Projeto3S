@@ -23,7 +23,7 @@
 }
 
 .nav-link{
-    color: #000c00 !important;
+    color: #fff !important;
 }
 
 a{
@@ -107,3 +107,6 @@ body{
     margin-top: -100px;
 }
 
+.whitetext{
+    color:white
+}
